@@ -25,3 +25,58 @@ def my_function():
 for _ in range(10):
     # Accessible anywhere
     my_block_var = 3
+
+#You can force the code allow you to modify something with global if you use the global keyword before you use it.
+
+#e.g.
+
+# Modifying Global Scope
+
+enemies = 1
+
+
+def increase_enemies():
+    global enemies
+    enemies += 1
+    print(f"enemies inside function: {enemies}")
+
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
+
+"""if you want to avoid the usage of keyword global you can just use it as input to your function and return the modified value 
+eg.,"""
+
+# Modifying Global Scope
+
+enemies = 1
+
+
+def increase_enemies(enemy):
+    
+    enemy += 1
+    print(f"enemies inside function: {enemy}")
+    return enemy
+
+enemies=increase_enemies(enemies)
+print(f"enemies outside function: {enemies}")
+
+"""detailed program of how this works is shown below"""
+# Modifying Global Scope
+
+enemies = 1
+
+
+def increase_enemies(enemy):
+    print(f"enemies inside function before increment: {enemies}")
+    print(f"enemies inside function before increment : {enemy}")
+    enemy += 1
+    print(f"enemies inside function after increment: {enemies}")
+    print(f"enemies inside function after increment: {enemy}")
+    return enemy
+"""storing returned incremented value and then printing it """
+enemies=increase_enemies(enemies)
+print(f"enemies outside function: {enemies}")
+
+
+
