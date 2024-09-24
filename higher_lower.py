@@ -3,6 +3,27 @@ import random
 #import art
 #import game_data
 
+logo='''
+    __  ___       __             
+   / / / (_)___ _/ /_  ___  _____
+  / /_/ / / __ '/ __ \/ _ \/ ___/
+ / __  / / /_/ / / / /  __/ /    
+/_/ ///_/\__, /_/ /_/\___/_/     
+   / /  /____/_      _____  _____
+  / /   / __ \ | /| / / _ \/ ___/
+ / /___/ /_/ / |/ |/ /  __/ /    
+/_____/\____/|__/|__/\___/_/  '''
+
+
+vs='''
+ _    __    
+| |  / /____
+| | / / ___/
+| |/ (__  ) 
+|___/____(_)
+
+'''
+
 
 def format_account(account):
     account_name=account["name"]
@@ -17,26 +38,26 @@ def check_followers(a_followers_count,b_followers_count):
         return 'b'
 
 
-#print(art.logo)
+print(logo)
 score=0
 should_continue=True
-account_b=random.choice(game_data.data)
+account_b=random.choice(data)
 
 while should_continue:
     account_a=account_b
-    account_b=random.choice(game_data.data)
+    account_b=random.choice(data)
     if account_a == account_b:
-        account_b=random.choice(game_data.data)
+        account_b=random.choice(data)
 
     print(f"COMPARE A {format_account(account_a)}")
-    #print(art.vs)
+    print(vs)
     print(f"B {format_account(account_b)}")
 
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
 
     print("\n" * 20)
-    #print(art.logo)
+    print(logo)
 
     a_followers=account_a["follower_count"]
     b_followers=account_b["follower_count"]
