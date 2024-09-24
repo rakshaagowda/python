@@ -23,10 +23,11 @@ vs='''
 |___/____(_)
 
 '''
-"""scroll to line 330 or more to see the logic of the code till then it is jusr
-is information in the form of list (data) of dictionaries .
-information about the celebrtity is stored in a dictionary thier name , description of what they do ,
-instagram followers in million and the country they are from are listed below """
+#scroll to line 330 or more to see the logic of the code 
+#till then it is just information in the form of list (data) of dictionaries .
+#information about the celebrtity is stored in a dictionary thier name ,
+#description of what they do, instagram followers in million 
+#and the country they are from are listed below 
 data = [
     {
         'name': 'Instagram',
