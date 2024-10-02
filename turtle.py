@@ -1,6 +1,7 @@
 import turtle
 
-
+#few concepts of object oriented programming like creating object
+#concepts of classes are explained
 
 
 """constructing object (timmy) 'turtle' is imported and 
