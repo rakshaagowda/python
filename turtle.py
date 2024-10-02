@@ -1,9 +1,8 @@
 import turtle
 
-import another_module
-print(another_module.another_variable)
 
-import turtle
+
+
 """constructing object (timmy) 'turtle' is imported and 
 from which class 'Turtle' is fetched
 timmy=turtle.Turtle()
