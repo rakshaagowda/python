@@ -1,4 +1,6 @@
-"""draing a square using turtlr graphics module"""
+
+
+"""drawing a square using turtlr graphics module"""
 from turtle import Turtle,Screen
 tim=Turtle()
 tim.shape("turtle")
