@@ -1,3 +1,4 @@
+#turtle race using higher order functions 
 import turtle
 
 tim=turtle.Turtle()
