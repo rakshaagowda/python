@@ -13,7 +13,7 @@ for turtle_index in range(0,5):
     tim.color(colors[turtle_index])
     tim.penup()
     tim.shape("turtle")
-    tim.goto(x=-238, y=y_positions)
+    tim.goto(x=-238, y=random.choice(range(-100,200)))
 
 
 screen.exitonclick()
