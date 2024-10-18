@@ -26,6 +26,7 @@ while game_is_on:
         time.sleep(0.1)
         #range function syntax : range(start=3,stop=0,step=-1)
         for seg_num in range(len(segments)-1,0,-1):
+            #made the body follow the head
             new_x=segments[seg_num-1].xcor()
             new_y = segments[seg_num - 1].ycor()
             segments[seg_num].goto(new_x,new_y)
